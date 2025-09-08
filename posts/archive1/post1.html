@@ -10,7 +10,7 @@
 <body>
 <header class="site-header">
     <video autoplay muted loop playsinline class="bg-video">
-      <source src="/image/video2.mp4" type="video/mp4">Your browser does not support the video tag.
+      <source src="../image/video2.mp4" type="video/mp4">Your browser does not support the video tag.
     </video>
   <div class="header-content">
     <h1 class="logo"><span>”脊”</span></h1>
@@ -22,13 +22,13 @@
 <nav class="site-nav">
   <div class="nav-video-wrapper">
     <video autoplay muted loop playsinline class="nav-video">
-      <source src="/image/video2.mp4" type="video/mp4">
+      <source src="../image/video2.mp4" type="video/mp4">
     </video>
   </div>
   <ul>
     <li><a href="/index.html">Home</a></li>
     <li><a href="#">Works</a></li>
-    <li><a href="#">About</a></li>
+    <li><a href="../about/about.html">About</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
 </nav>
@@ -40,14 +40,15 @@
   <footer>&copy; 2025 Arata Kobayashi</footer>
 
   <script>
-    fetch("post1.md")
+    fetch("./post1.md")
       .then(response => response.text())
       .then(text => {
         document.getElementById("content").innerHTML = marked.parse(text);
       });
   </script>
-    <script src="/script.js"></script>
+    <script src="../script.js"></script>
 
 </body>
 
 </html>
+
