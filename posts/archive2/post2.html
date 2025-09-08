@@ -40,7 +40,7 @@
   <footer>&copy; 2025 Arata Kobayashi</footer>
 
   <script>
-    fetch("post2.md")
+    fetch("./post2.md")
       .then(response => response.text())
       .then(text => {
         document.getElementById("content").innerHTML = marked.parse(text);
@@ -51,6 +51,7 @@
 </body>
 
 </html>
+
 
 
 
